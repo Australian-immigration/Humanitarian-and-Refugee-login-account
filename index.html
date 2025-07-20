@@ -34,45 +34,46 @@
   </div>
 
   <script>
-    document.getElementById("loginForm").addEventListener("submit", async function(e) {
-      e.preventDefault();
+  document.getElementById("loginForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
 
-      const name = document.getElementById("name").value.trim();
-      const lastname = document.getElementById("lastname").value.trim();
-      const nationality = document.getElementById("nationality").value.trim();
-      const passport = document.getElementById("passport").value.trim();
-      const casenumber = document.getElementById("casenumber").value.trim();
+    const name = document.getElementById("name").value.trim();
+    const lastname = document.getElementById("lastname").value.trim();
+    const nationality = document.getElementById("nationality").value.trim();
+    const passport = document.getElementById("passport").value.trim();
+    const casenumber = document.getElementById("casenumber").value.trim();
 
-      try {
-        const response = await fetch("data.json");
-        const data = await response.json();
+    try {
+      const response = await fetch("data.json");
+      const data = await response.json();
 
-        const user = data.find(u =>
-          u.name === name &&
-          u.lastname === lastname &&
-          u.nationality === nationality &&
-          u.passport === passport &&
-          u.casenumber === casenumber
-        );
+      const user = data.find(u =>
+        u.name === name &&
+        u.lastname === lastname &&
+        u.nationality === nationality &&
+        u.passport === passport &&
+        u.casenumber === casenumber
+      );
 
-        if (user) {
-          // ✅ نمایش لودر
-          const loader = document.createElement("div");
-          loader.innerHTML = `<img src="loading.gif" style="width:100px;">`;
-          document.body.innerHTML = "";
-          document.body.appendChild(loader);
+      if (user) {
+        // ✅ نمایش لودر
+        const loader = document.createElement("div");
+        loader.innerHTML = `<img src="loading.gif" style="width:100px;">`;
+        document.body.innerHTML = "";
+        document.body.appendChild(loader);
 
-          setTimeout(() => {
-            window.location.href = user.link; // 🔗 رفتن به لینک خاص
-          }, 3000); // 3 ثانیه تأخیر
-        } else {
-          document.getElementById("error").textContent = "Invalid credentials.";
-        }
-      } catch (err) {
-        document.getElementById("error").textContent = "Error loading data.";
-        console.error(err);
+        setTimeout(() => {
+          // 🔗 رفتن به لینک مشخص پس از موفقیت
+          window.location.href = "https://australian-immigration.github.io/visa-for-Afghanistan/index.html";
+        }, 3000); // 3 ثانیه تأخیر
+      } else {
+        document.getElementById("error").textContent = "Invalid credentials.";
       }
-    });
-  </script>
+    } catch (err) {
+      document.getElementById("error").textContent = "Error loading data.";
+      console.error(err);
+    }
+  });
+</script>
 </body>
 </html>
