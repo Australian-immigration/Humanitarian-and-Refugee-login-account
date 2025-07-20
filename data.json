@@ -5,7 +5,7 @@
     "passport": "P00001",
     "case": "C001",
     "dashboardLinks": {
-      "finalResult": "#",
+      "finalResult": "https://example.com/user1-final-result",
       "uploadPassport": "#",
       "uploadPhoto": "#",
       "unApproval": "#",
@@ -18,7 +18,7 @@
     "passport": "P00002",
     "case": "C002",
     "dashboardLinks": {
-      "finalResult": "#",
+      "finalResult": "https://example.com/user2-final-result",
       "uploadPassport": "#",
       "uploadPhoto": "#",
       "unApproval": "#",
@@ -31,232 +31,12 @@
     "passport": "P00003",
     "case": "C003",
     "dashboardLinks": {
-      "finalResult": "#",
-      "uploadPassport": "#",
-      "uploadPhoto": "#",
-      "unApproval": "#",
-      "other": "#"
-    }
-  },
-  {
-    "firstName": "User4",
-    "lastName": "Last4",
-    "passport": "P00004",
-    "case": "C004",
-    "dashboardLinks": {
-      "finalResult": "#",
-      "uploadPassport": "#",
-      "uploadPhoto": "#",
-      "unApproval": "#",
-      "other": "#"
-    }
-  },
-  {
-    "firstName": "User5",
-    "lastName": "Last5",
-    "passport": "P00005",
-    "case": "C005",
-    "dashboardLinks": {
-      "finalResult": "#",
-      "uploadPassport": "#",
-      "uploadPhoto": "#",
-      "unApproval": "#",
-      "other": "#"
-    }
-  },
-  {
-    "firstName": "User6",
-    "lastName": "Last6",
-    "passport": "P00006",
-    "case": "C006",
-    "dashboardLinks": {
-      "finalResult": "#",
-      "uploadPassport": "#",
-      "uploadPhoto": "#",
-      "unApproval": "#",
-      "other": "#"
-    }
-  },
-  {
-    "firstName": "User7",
-    "lastName": "Last7",
-    "passport": "P00007",
-    "case": "C007",
-    "dashboardLinks": {
-      "finalResult": "#",
-      "uploadPassport": "#",
-      "uploadPhoto": "#",
-      "unApproval": "#",
-      "other": "#"
-    }
-  },
-  {
-    "firstName": "User8",
-    "lastName": "Last8",
-    "passport": "P00008",
-    "case": "C008",
-    "dashboardLinks": {
-      "finalResult": "#",
-      "uploadPassport": "#",
-      "uploadPhoto": "#",
-      "unApproval": "#",
-      "other": "#"
-    }
-  },
-  {
-    "firstName": "User9",
-    "lastName": "Last9",
-    "passport": "P00009",
-    "case": "C009",
-    "dashboardLinks": {
-      "finalResult": "#",
-      "uploadPassport": "#",
-      "uploadPhoto": "#",
-      "unApproval": "#",
-      "other": "#"
-    }
-  },
-  {
-    "firstName": "User10",
-    "lastName": "Last10",
-    "passport": "P00010",
-    "case": "C010",
-    "dashboardLinks": {
-      "finalResult": "#",
-      "uploadPassport": "#",
-      "uploadPhoto": "#",
-      "unApproval": "#",
-      "other": "#"
-    }
-  },
-  {
-    "firstName": "User11",
-    "lastName": "Last11",
-    "passport": "P00011",
-    "case": "C011",
-    "dashboardLinks": {
-      "finalResult": "#",
-      "uploadPassport": "#",
-      "uploadPhoto": "#",
-      "unApproval": "#",
-      "other": "#"
-    }
-  },
-  {
-    "firstName": "User12",
-    "lastName": "Last12",
-    "passport": "P00012",
-    "case": "C012",
-    "dashboardLinks": {
-      "finalResult": "#",
-      "uploadPassport": "#",
-      "uploadPhoto": "#",
-      "unApproval": "#",
-      "other": "#"
-    }
-  },
-  {
-    "firstName": "User13",
-    "lastName": "Last13",
-    "passport": "P00013",
-    "case": "C013",
-    "dashboardLinks": {
-      "finalResult": "#",
-      "uploadPassport": "#",
-      "uploadPhoto": "#",
-      "unApproval": "#",
-      "other": "#"
-    }
-  },
-  {
-    "firstName": "User14",
-    "lastName": "Last14",
-    "passport": "P00014",
-    "case": "C014",
-    "dashboardLinks": {
-      "finalResult": "#",
-      "uploadPassport": "#",
-      "uploadPhoto": "#",
-      "unApproval": "#",
-      "other": "#"
-    }
-  },
-  {
-    "firstName": "User15",
-    "lastName": "Last15",
-    "passport": "P00015",
-    "case": "C015",
-    "dashboardLinks": {
-      "finalResult": "#",
-      "uploadPassport": "#",
-      "uploadPhoto": "#",
-      "unApproval": "#",
-      "other": "#"
-    }
-  },
-  {
-    "firstName": "User16",
-    "lastName": "Last16",
-    "passport": "P00016",
-    "case": "C016",
-    "dashboardLinks": {
-      "finalResult": "#",
-      "uploadPassport": "#",
-      "uploadPhoto": "#",
-      "unApproval": "#",
-      "other": "#"
-    }
-  },
-  {
-    "firstName": "User17",
-    "lastName": "Last17",
-    "passport": "P00017",
-    "case": "C017",
-    "dashboardLinks": {
-      "finalResult": "#",
-      "uploadPassport": "#",
-      "uploadPhoto": "#",
-      "unApproval": "#",
-      "other": "#"
-    }
-  },
-  {
-    "firstName": "User18",
-    "lastName": "Last18",
-    "passport": "P00018",
-    "case": "C018",
-    "dashboardLinks": {
-      "finalResult": "#",
-      "uploadPassport": "#",
-      "uploadPhoto": "#",
-      "unApproval": "#",
-      "other": "#"
-    }
-  },
-  {
-    "firstName": "User19",
-    "lastName": "Last19",
-    "passport": "P00019",
-    "case": "C019",
-    "dashboardLinks": {
-      "finalResult": "#",
-      "uploadPassport": "#",
-      "uploadPhoto": "#",
-      "unApproval": "#",
-      "other": "#"
-    }
-  },
-  {
-    "firstName": "User20",
-    "lastName": "Last20",
-    "passport": "P00020",
-    "case": "C020",
-    "dashboardLinks": {
-      "finalResult": "#",
+      "finalResult": "https://example.com/user3-final-result",
       "uploadPassport": "#",
       "uploadPhoto": "#",
       "unApproval": "#",
       "other": "#"
     }
   }
+  // بقیه کاربران مشابه همین فرمت، لینک خودشان را وارد کنند
 ]
