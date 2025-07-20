@@ -1,24 +1,36 @@
-document.getElementById('loginForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const firstName = document.getElementById('firstName').value.trim();
-  const lastName = document.getElementById('lastName').value.trim();
-  const passport = document.getElementById('passport').value.trim();
-  const caseNo = document.getElementById('case').value.trim();
+document.addEventListener('DOMContentLoaded', () => {
+  const loginForm = document.getElementById('loginForm');
+  const errorMsg = document.getElementById('errorMsg');
 
-  fetch('data.json')
-    .then(res => res.json())
-    .then(data => {
-      const user = data.find(u =>
-        u.firstName === firstName &&
-        u.lastName === lastName &&
-        u.passport === passport &&
-        u.case === caseNo
-      );
-      if (user) {
-        localStorage.setItem('user', JSON.stringify(user));
-        window.location.href = 'index.html';
-      } else {
-        alert('مشخصات وارد شده اشتباه است.');
-      }
-    });
+  loginForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const firstName = document.getElementById('firstName').value.trim();
+    const lastName = document.getElementById('lastName').value.trim();
+    const passport = document.getElementById('passport').value.trim();
+    const caseNum = document.getElementById('case').value.trim();
+
+    fetch('data.json')
+      .then(res => res.json())
+      .then(users => {
+        const matchedUser = users.find(user =>
+          user.firstName.toLowerCase() === firstName.toLowerCase() &&
+          user.lastName.toLowerCase() === lastName.toLowerCase() &&
+          user.passport.toLowerCase() === passport.toLowerCase() &&
+          user.case.toLowerCase() === caseNum.toLowerCase()
+        );
+
+        if (matchedUser) {
+          localStorage.setItem('user', JSON.stringify(matchedUser));
+          window.location.href = 'index.html';
+        } else {
+          errorMsg.style.display = 'block';
+          errorMsg.textContent = 'Invalid credentials, please try again.';
+        }
+      })
+      .catch(() => {
+        errorMsg.style.display = 'block';
+        errorMsg.textContent = 'Error loading user data.';
+      });
+  });
 });
